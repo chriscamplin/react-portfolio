@@ -1,9 +1,15 @@
 import React, { Component } from 'react';
 import myData from './data/site-data.json';
-import LazyLoad from 'react-lazy-load'
+import injectSheet from 'react-jss';
+import styles from './IndexStyles';
+import TileModalLauncher from './TileModalLauncher/TileModalLauncher';
+// MAP modalLaunchers 
 
 class Grid extends Component {
+
   render() {
+    const { sheet: { classes } } = this.props;
+
     return (
       <div>
         {myData.Portfolio.map((item, index) =>
@@ -17,11 +23,17 @@ class Grid extends Component {
                   </div>
               </div>
               <div key={index + 1 } className="right-panel">
-                  <a href={item.path} target="_BLANK" rel="noopener noreferrer">
-                      <LazyLoad height={'50vh'} offsetBottom={100} debounce={false}>
-                          <img src={item.image_path} alt={item.image_alt} />
-                      </LazyLoad>
-                  </a>
+                <TileModalLauncher buttonLabel={item.image_path} key={index} action={this.handler}>
+                    <div className={classes.imageModal}>
+                      <a href={item.path} target="_BLANK" rel="noopener noreferrer">
+                        <img 
+                          src={item.image_path} 
+                          alt={item.image_alt}
+                          className={classes.imageInModal}
+                          />
+                      </a>
+                    </div>
+                </TileModalLauncher>
               </div>
           </div>)}
     </div>
@@ -29,4 +41,4 @@ class Grid extends Component {
   }
 }
 
-export default Grid;
+export default injectSheet(styles)(Grid);

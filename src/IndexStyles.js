@@ -19,6 +19,12 @@ export default {
       margin: '0',
     },
 
+    iframe: {
+      border: '0px solid #909090',
+      width: '100%',
+      height:'50vh',
+    },
+
     a: {
       color: '#568db2',
       textDecoration: 'none',
@@ -36,8 +42,11 @@ export default {
   textModal: {
     textAlign: 'left',
     margin: '0.8rem',
-    padding: '7.8rem',
-    background: '#ccc',
+    padding: '4.8rem 4.8rem',
+
+    '& img': {
+      display: "block",
+    },
 
     '& h2': {
       marginTop: 0,
