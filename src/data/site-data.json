@@ -110,6 +110,12 @@
             "url": "https://docs.google.com/document/d/1-1IQVDJQSPLaGpbqzmRXt9MxUFvyGvd9EosNcaLtFuQ/export?format=pdf",
             "iframe": "https://docs.google.com/document/d/1-1IQVDJQSPLaGpbqzmRXt9MxUFvyGvd9EosNcaLtFuQ/pub?embedded=true"
         }
+    ],
+
+    "Footer": [
+        {
+        "content": "Site built in React JS & ES2015"
+        }
     ]
     
 }

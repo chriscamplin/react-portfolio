@@ -23,7 +23,7 @@ class Grid extends Component {
                   </div>
               </div>
               <div key={index + 1 } className="right-panel">
-                <TileModalLauncher buttonLabel={item.image_path} key={index} action={this.handler}>
+                <TileModalLauncher imgSrc={item.image_path} key={index} action={this.handler}>
                     <div className={classes.imageModal}>
                       <a href={item.path} target="_BLANK" rel="noopener noreferrer">
                         <img 

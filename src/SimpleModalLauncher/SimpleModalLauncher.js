@@ -12,7 +12,10 @@ class SimpleModalLauncher extends Component {
     };
   }
 
-  handleToggleModal() {
+  handleToggleModal(e) {
+    if (e) {
+      e.preventDefault();
+    }
     this.setState({ showModal: !this.state.showModal });
   }
 
@@ -23,14 +26,14 @@ class SimpleModalLauncher extends Component {
     return (
       <div>
         <a
-          href="##"
-          onClick={() => this.handleToggleModal()}
+          href="#0"
+          onClick={(e) => this.handleToggleModal(e)}
         >
           {buttonLabel}
         </a>
 
         {showModal &&
-          <SimpleModal onCloseRequest={() => this.handleToggleModal()}>
+          <SimpleModal onCloseRequest={(e) => this.handleToggleModal(e)}>
             {children}
           </SimpleModal>}
       </div>

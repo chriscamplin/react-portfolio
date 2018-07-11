@@ -25,6 +25,12 @@ export default {
       height:'50vh',
     },
 
+    '.Footer': {
+      position: 'fixed',
+      bottom: 0,
+      right: '1rem',
+    },
+
     a: {
       color: '#568db2',
       textDecoration: 'none',
@@ -42,7 +48,7 @@ export default {
   textModal: {
     textAlign: 'left',
     margin: '0.8rem',
-    padding: '4.8rem 4.8rem',
+    padding: '2.8rem 4.8rem',
 
     '& img': {
       display: "block",
@@ -66,4 +72,5 @@ export default {
       height: 'auto',
     },
   },
+
 };

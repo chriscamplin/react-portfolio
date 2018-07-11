@@ -23,19 +23,16 @@ class TileModalLauncher extends Component {
   }
 
   render() {
-    const { buttonLabel, children } = this.props;
+    const { imgSrc, children } = this.props;
     const { showModal } = this.state;
     var className = 'tile' + (this.state.launched ? ' modal-mode' : '');
 
     return (
       <LazyLoad height={'50vh'} offsetBottom={100} debounce={false} className={className}>
         <div>
-          <a
-            href="##"
-            onClick={() => this.handleToggleModal()}
-          >
-            <img src={buttonLabel} alt="grid-tile" />
-          </a>
+          <span onClick={() => this.handleToggleModal()} >
+            <img src={imgSrc} alt="grid-tile" />
+          </span>
 
           {showModal &&
             <SimpleModal onCloseRequest={() => this.handleToggleModal()}>
@@ -48,7 +45,7 @@ class TileModalLauncher extends Component {
 }
 
 TileModalLauncher.propTypes = {
-  buttonLabel: PropTypes.string.isRequired,
+  imgSrc  : PropTypes.string.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
