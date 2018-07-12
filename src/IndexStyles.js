@@ -31,6 +31,10 @@ export default {
       right: '1rem',
     },
 
+    svg: {
+      fill: '#568db2',
+    },
+
     a: {
       color: '#568db2',
       textDecoration: 'none',

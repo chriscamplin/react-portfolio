@@ -11,7 +11,6 @@ class TileModalLauncher extends Component {
     this.state = {
       showModal: false,
       launched: false,
-
     };
   }
 

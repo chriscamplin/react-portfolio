@@ -55,3 +55,15 @@
 #outer-container {
   height: 100%;
 }
+
+.bm-item-list > div {
+  height: 50px;
+}
+
+.bm-item-list > div a{
+  display: flex;
+}
+
+.bm-item-list > div a svg {
+  margin-right: 10px;
+}

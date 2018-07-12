@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import injectSheet from 'react-jss';
 import styles from './SimpleModalLauncherStyles';
 import SimpleModal from '../SimpleModal/SimpleModal';
+import Icon from '../Icon';
 
 class SimpleModalLauncher extends Component {
   constructor(props) {
@@ -20,16 +21,13 @@ class SimpleModalLauncher extends Component {
   }
 
   render() {
-    const { buttonLabel, children } = this.props;
+    const { iconRef, buttonLabel, children } = this.props;
     const { showModal } = this.state;
 
     return (
       <div>
-        <a
-          href="#0"
-          onClick={(e) => this.handleToggleModal(e)}
-        >
-          {buttonLabel}
+        <a href="#0" onClick={(e) => this.handleToggleModal(e)} >
+          <Icon icon={iconRef} /> {buttonLabel}
         </a>
 
         {showModal &&
@@ -43,6 +41,7 @@ class SimpleModalLauncher extends Component {
 
 SimpleModalLauncher.propTypes = {
   buttonLabel: PropTypes.string.isRequired,
+  iconRef: PropTypes.string.isRequired,
   children: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
