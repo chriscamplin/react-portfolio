@@ -19,7 +19,7 @@ class Grid extends Component {
                   <div>
                       <p>{item.html}</p>
                       <br />
-                      <p>{item.image_alt}</p>
+                      <h3>{item.image_alt}</h3>
                   </div>
               </div>
               <div key={index + 1 } className="right-panel">
