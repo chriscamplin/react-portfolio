@@ -32,21 +32,25 @@ export default {
     },
 
     svg: {
-      fill: '#568db2',
+      fill: '#04DEAD',
     },
 
     a: {
-      color: '#568db2',
+      color: '#04DEAD',
       textDecoration: 'none',
     },
 
     'a:hover': {
-      color: '#466d87',
+      opacity: '0.75',
     },
   },
 
   appWrapper: {
     textAlign: 'center',
+  },
+
+  playgroundLink: {
+    display: 'none !important',
   },
 
   textModal: {

@@ -25,7 +25,7 @@
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: #04DEAD;
 }
 
 /* General sidebar styles */
@@ -37,7 +37,7 @@
 
 /* Morph shape necessary with bubble or elastic */
 .bm-morph-shape {
-  fill: #373a47;
+  fill: #04DEAD;
 }
 
 /* Wrapper for item list */
@@ -57,8 +57,16 @@
 }
 
 .bm-item-list > div {
-  height: 50px;
+  border-bottom: 1px solid #04DEAD;
+  padding: 15px;
+  transition: border-width .125s ease-in-out;
 }
+
+.bm-item-list > div:hover {
+  border-width:  5px;
+  font-weight: bold;
+}
+
 
 .bm-item-list > div a{
   display: flex;

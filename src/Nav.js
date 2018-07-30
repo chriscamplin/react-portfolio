@@ -16,6 +16,11 @@ class Nav extends Component {
     return (
         <Menu pageWrapId={ "page-wrap" } outerContainerId={ "outer-container" }>
           <div>
+            <a className="menu-item--small" href="/">
+              <Icon icon={ICONS.HOME} /> Home
+            </a>
+          </div>
+          <div>
             <a className="menu-item--small" href="https://github.com/chriscamplin" target="_BLANK" rel="noopener noreferrer">
               <Icon icon={ICONS.GITHUB} /> Github
             </a>
@@ -43,6 +48,11 @@ class Nav extends Component {
               </div>
             </SimpleModalLauncher>
           )}
+          <div className={classes.playgroundLink}>
+            <a className="menu-item--small playgroundLink" href="/playground" >
+              <Icon icon={ICONS.BARCHART} /> Playground
+            </a>
+          </div>
 
         </Menu>
     )
