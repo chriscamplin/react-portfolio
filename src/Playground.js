@@ -60,12 +60,13 @@ class Playground extends Component {
   }
 
   componentDidMount() {
-    axios.get(`https://public-api.adsbexchange.com/VirtualRadar/AircraftList.json`)
+    axios.get(`/VirtualRadar/AircraftList.json`)
       .then(res => {
-        console.log(res);
         const flightData = res.data.acList.map(obj => obj.Op);
         this.setState({ flightData });
-        console.log(flightData);
+        console.log('Number of passenger aircraft currently airborne: ', flightData.length)
+        console.log('flightData:: ');
+        console.table(this.state.flightData);
       });
   }
 

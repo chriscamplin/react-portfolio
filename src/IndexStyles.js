@@ -49,10 +49,6 @@ export default {
     textAlign: 'center',
   },
 
-  playgroundLink: {
-    display: 'none !important',
-  },
-
   textModal: {
     textAlign: 'left',
     margin: '0.8rem',

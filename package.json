@@ -1,8 +1,9 @@
 {
   "name": "portfolio-site",
   "homepage": "http://chriscamplin.github.io/",
-  "description": null,
+  "description": "null",
   "version": "0.0.197",
+  "proxy": "https://public-api.adsbexchange.com",
   "dependencies": {
     "ansi-styles": "^3.2.1",
     "axios": "^0.18.0",

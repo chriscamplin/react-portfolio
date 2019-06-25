@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
-import { push as Menu } from 'react-burger-menu';
-import './css/BurgerMenu.css';
-import SimpleModalLauncher from './SimpleModalLauncher/SimpleModalLauncher';
+
 import injectSheet from 'react-jss';
-import styles from './IndexStyles';
-import myData from './data/site-data.json';
+
+import { push as Menu } from 'react-burger-menu';
+
 import Icon from './Icon';
+import styles from './IndexStyles';
 import ICONS from './constants';
+
+import SimpleModalLauncher from './SimpleModalLauncher/SimpleModalLauncher';
+import './css/BurgerMenu.css';
+import myData from './data/site-data.json';
 
 class Nav extends Component {
 
@@ -25,7 +29,6 @@ class Nav extends Component {
               <Icon icon={ICONS.GITHUB} /> Github
             </a>
           </div>
-          {/*  <a className="menu-item--small" href="">Data visualisations</a> plan to crat 3d data visualisation to demonstrate skills*/}
           {/* maps out modal launcher nav items */}
           {myData.Nav.map((item, index) =>
             <SimpleModalLauncher buttonLabel={item.label} iconRef={item.icon} key={index}>
@@ -48,12 +51,13 @@ class Nav extends Component {
               </div>
             </SimpleModalLauncher>
           )}
+          {/*  <a className="menu-item--small" href="">Data visualisations</a> plan to create 3d data visualisation to demonstrate skills
           <div className={classes.playgroundLink}>
             <a className="menu-item--small playgroundLink" href="/playground" >
               <Icon icon={ICONS.BARCHART} /> Playground
             </a>
           </div>
-
+          */}
         </Menu>
     )
   }
