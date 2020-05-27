@@ -6,7 +6,7 @@
   "proxy": "https://public-api.adsbexchange.com",
   "dependencies": {
     "ansi-styles": "^3.2.1",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "d3": "^5.5.0",
     "js-base64": "^2.4.3",
     "lodash": "4.17.4",
