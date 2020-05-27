@@ -9,24 +9,6 @@
             "path": "https://nationalgridcleanenergy.com/"
         },
         {
-            "image_path": "http://christophercamplin.com/development/images/dell-eagle.png",
-            "html": "React (server side), Redux, graphQL connected component development as part of a team, React Spring for animation, D3 for charts",
-            "image_alt": "Dell Eagle",
-            "path": "https://eagle.economist.com/"
-        },
-        {
-            "image_path": "http://christophercamplin.com/development/images/reimagine-the-game.png",
-            "html": "React Static, Redux connected component development as part of a team",
-            "image_alt": "Siemens Reimagine the game",
-            "path": "https://reimaginethegame.economist.com/en/intro/"
-        },
-        {
-            "image_path": "http://christophercamplin.com/development/images/drax.png",
-            "html": "New APIs & features to extend functionality of existing React / Redux / mongodb app",
-            "image_alt": "Drax Electric Insights",
-            "path": "https://electricinsights.co.uk/#/homepage?_k=0st767"
-        },
-        {
             "image_path": "http://christophercamplin.com/development/images/sony-wena.png",
             "html": "React JS Watch Strap selector embedded in Sony's main page",
             "image_alt": "Sony Wena & Fes Configurator",
